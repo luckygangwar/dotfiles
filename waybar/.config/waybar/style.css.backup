@@ -1,0 +1,44 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: rgba(20, 20, 20, 0.75);
+  color: #ffffff;
+}
+
+#custom-arch {
+  padding: 0 14px;
+  font-size: 18px;
+  color: #1793d1;
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji";
+  font-size: 13px;
+}
+
+
+#workspaces button {
+  padding: 0 8px;
+  color: #bbbbbb;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#clock {
+  padding: 0 14px;
+}
+
+#pulseaudio,
+#network,
+#battery,
+#tray {
+  padding: 0 10px;
+}

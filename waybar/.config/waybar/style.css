@@ -1,0 +1,185 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: #cdd6f4;
+}
+
+/* Arch Logo Button */
+#custom-arch {
+  background: linear-gradient(135deg, #1793d1 0%, #0d5f8a 100%);
+  color: #ffffff;
+  padding: 0 18px;
+  margin: 0;
+  margin-right: 8px;
+  border-radius: 12px;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(23, 147, 209, 0.3);
+  transition: all 0.3s ease;
+}
+
+#custom-arch:hover {
+  background: linear-gradient(135deg, #1ea5e6 0%, #1793d1 100%);
+  box-shadow: 0 6px 16px rgba(23, 147, 209, 0.5);
+}
+
+/* Workspaces */
+#workspaces {
+  background: rgba(30, 30, 46, 0.8);
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+
+#workspaces button {
+  color: #6c7086;
+  padding: 0 8px;
+  margin: 0 2px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+  background: rgba(108, 112, 134, 0.2);
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  background: linear-gradient(135deg, #89b4fa 0%, #74c7ec 100%);
+  color: #1e1e2e;
+  min-width: 30px;
+  box-shadow: 0 2px 8px rgba(137, 180, 250, 0.3);
+}
+
+#workspaces button.urgent {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+
+/* Window Title */
+#window {
+  background: rgba(30, 30, 46, 0.8);
+  color: #cdd6f4;
+  padding: 0 16px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+/* Clock */
+#clock {
+  background: rgba(30, 30, 46, 0.8);
+  color: #f9e2af;
+  padding: 0 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modules */
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#battery {
+  background: rgba(30, 30, 46, 0.8);
+  color: #cdd6f4;
+  padding: 0 14px;
+  margin: 0 4px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#network:hover,
+#battery:hover {
+  background: rgba(45, 45, 68, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* CPU */
+#cpu {
+  color: #f38ba8;
+}
+
+/* Memory */
+#memory {
+  color: #a6e3a1;
+}
+
+/* Audio */
+#pulseaudio {
+  color: #89b4fa;
+}
+
+#pulseaudio.muted {
+  color: #6c7086;
+}
+
+/* Network */
+#network {
+  color: #94e2d5;
+}
+
+#network.disconnected {
+  color: #f38ba8;
+}
+
+/* Battery */
+#battery {
+  color: #a6e3a1;
+}
+
+#battery.warning {
+  color: #f9e2af;
+}
+
+#battery.critical {
+  color: #f38ba8;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+}
+
+/* System Tray */
+#tray {
+  background: rgba(30, 30, 46, 0.8);
+  padding: 0 12px;
+  margin-left: 4px;
+  border-radius: 12px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+
+/* Tooltip */
+tooltip {
+  background: rgba(30, 30, 46, 0.95);
+  border: 1px solid rgba(137, 180, 250, 0.3);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+tooltip label {
+  color: #cdd6f4;
+}
+
+/* Backlight */
+#backlight {
+  color: #fab387;
+}
